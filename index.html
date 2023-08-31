@@ -6,11 +6,23 @@
 	</head>
 	<body class="is-preload">
 							<form action="POST" data-netlify="true">
-								<div style="box-sizing: inherit;"><input class="ipt01-cntform" type="text" name="name" placeholder="Your name" autocomplete="off" value=""></div>
-                    <input class="ipt01-cntform" class="h1K5_Q" type="text" name="role" placeholder="Your role" value="">
-                    <input class="ipt01-cntform" type="email" name="email" placeholder="Your email" autocomplete="off" value="">
-                    <textarea class="ipt02-cntform" name="message" placeholder="How may I help you?"></textarea>
-                    <button class="ipt03-cntform" type="submit">Submit</button>
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+									</div>
+									<div class="field">
+										<!-- <div data-netlify-recaptcha="true"></div> -->
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="button primary" /></li>
+								</ul>
 							</form>
 
 	</body>
